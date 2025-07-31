@@ -28,7 +28,6 @@ h1, h2, h3, .logo {
   position: sticky;
   top: 0;
   z-index: 10;
-  flex-wrap: nowrap; /* prevent wrapping */
 }
 
 .logo {
@@ -40,17 +39,23 @@ h1, h2, h3, .logo {
   color: #ffd700;
 }
 
+
 .navbar nav a {
+  display: inline-block; /* turn into block-like inline elements */
   margin-left: 1rem;
+  padding: 0.5rem 1rem;
   text-decoration: none;
   color: white;
   font-weight: bold;
-  transition: color 0.3s ease;
+  background-color: transparent;
+  border-radius: 8px;
+  transition: all 0.3s ease;
 }
 
 .navbar nav a:hover {
-  color: #ffd700; /* Gold */
-  text-decoration: underline;
+  background-color: #ffd700;  /* gold hover effect */
+  color: #a61c00;             /* red text on gold background */
+  text-decoration: none;
 }
 
 /* Hero Section */
@@ -113,6 +118,18 @@ h1, h2, h3, .logo {
   z-index: 2;
 }
 
+.hero-content h1 {
+  font-family: 'Pacifico', cursive;
+  font-size: 3rem;
+  color: white;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+.hero-content h1 span {
+  color: #ffd700;
+}
+
+
 .cta-button {
   display: inline-block;
   margin-top: 1rem;
@@ -142,6 +159,14 @@ h1, h2, h3, .logo {
 .section {
   padding: 4rem 2rem;
   text-align: center;
+}
+
+/* Section Titles Matching Logo Font */
+.section h2 {
+  font-family: 'Pacifico', cursive;
+  font-size: 2.2rem; /* optional tweak */
+  color: var(--primary); /* optional if you want it to match the red */
+  margin-bottom: 1rem;
 }
 
 /* About Section with American Flag Background */
