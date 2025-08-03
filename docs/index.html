@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sample Restaurant</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <!-- Anchor for top of page -->
+  <div id="top"></div>
+
+  <!-- Header / Nav -->
+  <header class="navbar">
+    <div class="logo">Biggy<span>'s</span> Place</div>
+    <!-- Added nav-links wrapper for mobile nav -->
+    <div class="nav-links">
+      <nav>
+        <a href="#menu">Menu</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+    <!-- Hamburger button for mobile -->
+    <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">&#9776;</button>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-slider">
+      <div class="slide slide-1"></div>
+      <div class="slide slide-2"></div>
+      <div class="slide slide-3"></div>
+      <div class="slide slide-4"></div>
+    </div>
+    <div class="hero-content">
+      <h1>Welcome to Biggy<span>'s</span> Place</h1>
+      <p>Go Biggy's or Go Home!!</p>
+      <div id="hours-status" class="hours-status">
+        <span class="line-1">Checking...</span>
+        <span class="line-2"></span>
+      </div>      
+      <a href="#menu" class="cta-button">View Menu</a>
+    </div>
+  </section>
+
+  <!-- Menu Section with Collapsible -->
+  <section id="menu" class="section">
+    <h2>Our Menu</h2>
+
+    <!-- Breakfast -->
+<button class="collapsible">Breakfast</button>
+<div class="content">
+  <h4>Traditional Egg Orders</h4>
+  <div class="menu-item">
+    <div class="menu-item-header">
+      <span>One Egg with Potatoes or Grits</span>
+      <span class="item-price">$5.99 / w/ Meat $6.99</span>
+    </div>
+    <p class="item-desc">Served with home fries or grits & toast. Add sausage, bacon, or ham.</p>
+  </div>
+  <div class="menu-item">
+    <div class="menu-item-header">
+      <span>Two Eggs with Potatoes or Grits</span>
+      <span class="item-price">$6.99 / w/ Meat $7.99</span>
+    </div>
+    <p class="item-desc">Served with home fries or grits & toast. Add sausage, bacon, or ham.</p>
+  </div>
+  <div class="menu-item">
+    <div class="menu-item-header">
+      <span>Gyro Meat and Eggs</span>
+      <span class="item-price">$12.99</span>
+    </div>
+    <p class="item-desc">Gyro meat served with two eggs, toast, and choice of potatoes or grits.</p>
+  </div>
+  <div class="menu-item">
+    <div class="menu-item-header">
+      <span>Corned Beef Hash and Eggs</span>
+      <span class="item-price">$12.99</span>
+    </div>
+    <p class="item-desc">Savory corned beef hash served with two eggs and toast.</p>
+  </div>
+  <div class="menu-item">
+    <div class="menu-item-header">
+      <span>Chopped Steak and Eggs</span>
+      <span class="item-price">$12.99</span>
+    </div>
+    <p class="item-desc">Juicy chopped steak served with two eggs and toast.</p>
+  </div>
+  <div class="menu-item">
+    <div class="menu-item-header">
+      <span>Country Fried Steak and Eggs</span>
+      <span class="item-price">$12.99</span>
+    </div>
+    <p class="item-desc">Crispy country fried steak served with two eggs and toast.</p>
+  </div>
+  <div class="menu-item">
+    <div class="menu-item-header">
+      <span>Ham Steak and Eggs</span>
+      <span class="item-price">$13.99</span>
+    </div>
+    <p class="item-desc">Thick ham steak served with two eggs and toast.</p>
+  </div>
+  <div class="menu-item">
+    <div class="menu-item-header">
+      <span>9 oz Sirloin Steak and Eggs</span>
+      <span class="item-price">$14.99</span>
+    </div>
+    <p class="item-desc">Grilled 9 oz sirloin steak served with two eggs and toast.</p>
+  </div>
+  <h4>Egg Sandwiches</h4>
+  <div class="menu-item">
+    <div class="menu-item-header">
+      <span>Fried Egg Sandwich</span>
+      <span class="item-price">$3.99 / w/ Cheese $4.49</span>
+    </div>
+    <p class="item-desc">Fried egg served on toast or bun. Add cheese for extra flavor.</p>
+  </div>
+  <div class="menu-item">
+    <div class="menu-item-header">
+      <span>Egg & Cheese Sandwich</span>
+      <span class="item-price">$4.99</span>
+    </div>
+    <p class="item-desc">Scrambled egg and melted cheese on toast or bun.</p>
+  </div>
+  <div class="menu-item">
+    <div class="menu-item-header">
+      <span>Egg, Meat & Cheese Sandwich</span>
+      <span class="item-price">$5.99</span>
+    </div>
+    <p class="item-desc">Egg, choice of meat, and cheese served on toast or bun.</p>
+  </div>
+  <h4>Other Breakfast Favorites</h4>
+  <div class="menu-item">
+    <div class="menu-item-header">
+      <span>Quaker Oatmeal</span>
+      <span class="item-price">$3.99</span>
+    </div>
+    <p class="item-desc">Warm and hearty oatmeal served with brown sugar.</p>
+  </div>
+  <div class="menu-item">
+    <div class="menu-item-header">
+      <span>Belgian Waffle</span>
+      <span class="item-price">$5.99</span>
+    </div>
+    <p class="item-desc">Golden Belgian waffle, crispy outside and fluffy inside.</p>
+  </div>
+  <div class="menu-item">
+    <div class="menu-item-header">
+      <span>Pancakes with Maple Syrup</span>
+      <span class="item-price">$5.99</span>
+    </div>
+    <p class="item-desc">Fluffy pancakes served with warm maple syrup.</p>
+  </div>
+  <div class="menu-item">
+    <div class="menu-item-header">
+      <span>French Toast</span>
+      <span class="item-price">$6.49</span>
+    </div>
+    <p class="item-desc">Thick slices of bread dipped in egg batter and grilled.</p>
+  </div>
+  <h4>Sides</h4>
+  <div class="menu-item">
+    <div class="menu-item-header">
+      <span>Bacon, Sausage, or Ham</span>
+      <span class="item-price">$2.99</span>
+    </div>
+    <p class="item-desc">Choice of crispy bacon, sausage links/patties, or sliced ham.</p>
+  </div>
+  <div class="menu-item">
+    <div class="menu-item-header">
+      <span>Polish Sausage or Gyro</span>
+      <span class="item-price">$4.99</span>
+    </div>
+    <p class="item-desc">Hearty side of grilled Polish sausage or gyro meat.</p>
+  </div>
+  <div class="menu-item">
+    <div class="menu-item-header">
+      <span>Corned Beef Hash</span>
+      <span class="item-price">$4.99</span>
+    </div>
+    <p class="item-desc">Savory corned beef hash, a breakfast favorite.</p>
+  </div>
+  <div class="menu-item">
+    <div class="menu-item-header">
+      <span>Home Fries or Grits</span>
+      <span class="item-price">$2.99</span>
+    </div>
+    <p class="item-desc">Golden brown home fries or creamy southern-style grits.</p>
+  </div>
+  <div class="menu-item">
+    <div class="menu-item-header">
+      <span>Toast or Biscuit</span>
+      <span class="item-price">$1.99</span>
+    </div>
+    <p class="item-desc">Choice of white, wheat, rye toast or a fluffy biscuit.</p>
+  </div>
+  <div class="menu-item">
+    <div class="menu-item-header">
+      <span>Sliced Tomatoes, Pineapple, or Applesauce</span>
+      <span class="item-price">$2.49</span>
+    </div>
+    <p class="item-desc">Light and fresh sides to accompany your meal.</p>
+  </div>
+  <div class="menu-item">
+    <div class="menu-item-header">
+      <span>Side of Sausage Gravy</span>
+      <span class="item-price">$1.99</span>
+    </div>
+    <p class="item-desc">A cup of our rich and savory sausage gravy.</p>
+  </div>
+</div>
+    <!-- Lunch -->
+    <button class="collapsible">Lunch</button>
+    <div class="content">
+      <div class="menu-section">
+        <h4 class="section-heading">Biggy's Burger Platters</h4>
+        <p class="section-desc">Served with your choice of two: Crispy French Fries, Coleslaw or Potato Salad. Substitute a cup of soup or onion rings for $2.00.</p>
+        <div class="menu-item">
+          <div class="menu-item-header">
+            <span>Hamburger</span>
+            <span class="item-price">$11.49</span>
+          </div>
+          <p class="item-desc">Classic grilled hamburger served on a toasted bun.</p>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-header">
+            <span>Cheeseburger</span>
+            <span class="item-price">$12.49</span>
+          </div>
+          <p class="item-desc">Hamburger topped with your choice of cheese.</p>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-header">
+            <span>Chili Cheeseburger</span>
+            <span class="item-price">$12.49</span>
+          </div>
+          <p class="item-desc">Smothered in Biggy's chili and melted cheese.</p>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-header">
+            <span>Bacon Cheeseburger</span>
+            <span class="item-price">$12.99</span>
+          </div>
+          <p class="item-desc">Crispy bacon and cheese on a juicy beef patty.</p>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-header">
+            <span>Mushroom Swiss Burger</span>
+            <span class="item-price">$12.49</span>
+          </div>
+          <p class="item-desc">Sautéed mushrooms and Swiss cheese.</p>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-header">
+            <span>BBQ Bacon Cheeseburger</span>
+            <span class="item-price">$12.49</span>
+          </div>
+          <p class="item-desc">Topped with BBQ sauce, bacon, and cheese.</p>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-header">
+            <span>Fried Egg Cheeseburger</span>
+            <span class="item-price">$12.99</span>
+          </div>
+          <p class="item-desc">Topped with a fried egg and cheese.</p>
+        </div>
+        <p class="item-desc">Make any burger a double for $4.99. Cheese options: Swiss, Pepper Jack, Provolone, or Cheddar.</p>
+      </div>
+
+      <div class="menu-section">
+        <h4 class="section-heading">Gyros</h4>
+        <div class="menu-item">
+          <div class="menu-item-header">
+            <span>Gyro Sandwich</span>
+            <span class="item-price">$12.99</span>
+          </div>
+          <p class="item-desc">Pita bread topped with shaved grilled gyro meat, tomatoes, red onion, and fresh-made tzatziki sauce served with fries or a cup of soup.</p>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-header">
+            <span>Gyro w/ Small Greek Salad</span>
+            <span class="item-price">$13.99</span>
+          </div>
+          <p class="item-desc">Includes a gyro sandwich and a small Greek salad.</p>
+        </div>
+      </div>
+
+      <div class="menu-section">
+        <h4 class="section-heading">Open-Faced Platters</h4>
+        <p class="section-desc">Served open-face with mashed or French fries potatoes and a cup of soup.</p>
+        <div class="menu-item-header">
+          <span>Hamburger</span>
+          <span class="item-price">$11.99</span>
+        </div>
+        <div class="menu-item-header">
+          <span>House-Roasted Turkey</span>
+          <span class="item-price">$11.99</span>
+        </div>
+      </div>
+
+      <div class="menu-section">
+        <h4 class="section-heading">Biggy's Chili</h4>
+        <div class="menu-item-header">
+          <span>Cup</span>
+          <span class="item-price">$4.99</span>
+        </div>
+        <div class="menu-item-header">
+          <span>Cup w/ Cheese and Onions</span>
+          <span class="item-price">$5.99</span>
+        </div>
+        <div class="menu-item-header">
+          <span>Bowl</span>
+          <span class="item-price">$5.99</span>
+        </div>
+        <div class="menu-item-header">
+          <span>Bowl w/ Cheese and Onions</span>
+          <span class="item-price">$6.99</span>
+        </div>
+        <div class="menu-item-header">
+          <span>Full-Out (Pasta, Chili, Onions, Cheese)</span>
+          <span class="item-price">$9.99</span>
+        </div>
+      </div>
+
+      <div class="menu-section">
+        <h4 class="section-heading">Low-Carb Options</h4>
+        <div class="menu-item-header">
+          <span>Diet Plate</span>
+          <span class="item-price">$11.99</span>
+        </div>
+        <p class="item-desc">Hamburger patty OR grilled chicken, cottage cheese, tomatoes, black olives, pineapple, and cucumber.</p>
+        <div class="menu-item-header">
+          <span>Cold Plate</span>
+          <span class="item-price">$11.99</span>
+        </div>
+        <p class="item-desc">Tuna salad, coleslaw, cottage cheese, boiled egg, tomatoes, black olives, pineapple, and cucumber.</p>
+      </div>
+
+      <div class="menu-section">
+        <h4 class="section-heading">Side Orders</h4>
+        <div class="menu-item-header"><span>French Fries</span><span class="item-price">$2.99</span></div>
+        <div class="menu-item-header"><span>Wet Fries w/ Gravy</span><span class="item-price">$3.99</span></div>
+        <div class="menu-item-header"><span>Chili Fries</span><span class="item-price">$3.99</span></div>
+        <div class="menu-item-header"><span>Chili Cheese Fries</span><span class="item-price">$4.99</span></div>
+        <div class="menu-item-header"><span>Onion Rings, Half Order</span><span class="item-price">$2.99</span></div>
+        <div class="menu-item-header"><span>Onion Rings, Full Order</span><span class="item-price">$4.99</span></div>
+        <div class="menu-item-header"><span>Cottage Cheese</span><span class="item-price">$2.99</span></div>
+        <div class="menu-item-header"><span>Authentic Mashed Potatoes</span><span class="item-price">$1.99</span></div>
+        <div class="menu-item-header"><span>Coleslaw, Small</span><span class="item-price">$1.99</span></div>
+        <div class="menu-item-header"><span>Coleslaw, Large</span><span class="item-price">$3.99</span></div>
+        <div class="menu-item-header"><span>Potato Salad, Small</span><span class="item-price">$1.99</span></div>
+        <div class="menu-item-header"><span>Potato Salad, Large</span><span class="item-price">$3.99</span></div>
+        <div class="menu-item-header"><span>Apple Sauce</span><span class="item-price">$0.99</span></div>
+        <div class="menu-item-header"><span>Sliced Pineapple</span><span class="item-price">$2.99</span></div>
+        <div class="menu-item-header"><span>Tossed Salad</span><span class="item-price">$3.99</span></div>
+        <div class="menu-item-header"><span>8oz Burger Patty</span><span class="item-price">$3.99</span></div>
+      </div>
+    </div>
+
+    <!-- Beverages -->
+    <button class="collapsible">Beverages</button>
+    <div class="content">
+      <div class="menu-item">
+        <div class="menu-item-header">
+          <span>Coffee (Endless)</span>
+          <span class="item-price">$2.79</span>
+        </div>
+        <p class="item-desc">Freshly brewed regular or decafe</p>
+      </div>
+      <div class="menu-item">
+        <div class="menu-item-header">
+          <span>Hot Tea</span>
+          <span class="item-price">$2.79</span>
+        </div>
+        <p class="item-desc">Sweet and refreshing apple juice.</p>
+      </div>
+      <div class="menu-item">
+        <div class="menu-item-header">
+          <span>Coffee</span>
+          <span class="item-price">$2.49</span>
+        </div>
+        <p class="item-desc">Freshly brewed hot coffee.</p>
+      </div>
+      <div class="menu-item">
+        <div class="menu-item-header">
+          <span>Tea</span>
+          <span class="item-price">$2.29</span>
+        </div>
+        <p class="item-desc">Choice of black, green, or herbal tea.</p>
+      </div>
+      <div class="menu-item">
+        <div class="menu-item-header">
+          <span>Orange Juice (Small)</span>
+          <span class="item-price">$2.99</span>
+        </div>
+        <p class="item-desc">Freshly squeezed orange juice.</p>
+      </div>
+      <div class="menu-item">
+        <div class="menu-item-header">
+          <span>Orange Juice (Large)</span>
+          <span class="item-price">$3.49</span>
+        </div>
+        <p class="item-desc">Freshly squeezed orange juice.</p>
+      </div>
+      <div class="menu-item">
+        <div class="menu-item-header">
+          <span>Grapefruit Juice (Small)</span>
+          <span class="item-price">$2.99</span>
+        </div>
+        <p class="item-desc">Tangy and fresh grapefruit juice.</p>
+      </div>
+      <div class="menu-item">
+        <div class="menu-item-header">
+          <span>Grapefruit Juice (Large)</span>
+          <span class="item-price">$3.49</span>
+        </div>
+        <p class="item-desc">Tangy and fresh grapefruit juice.</p>
+      </div>
+      <div class="menu-item">
+        <div class="menu-item-header">
+          <span>Apple Juice (Small)</span>
+          <span class="item-price">$2.99</span>
+        </div>
+        <p class="item-desc">Chilled, sweet apple juice.</p>
+      </div>
+      <div class="menu-item">
+        <div class="menu-item-header">
+          <span>Apple Juice (Large)</span>
+          <span class="item-price">$3.49</span>
+        </div>
+        <p class="item-desc">Chilled, sweet apple juice.</p>
+      </div>
+      <div class="menu-item">
+        <div class="menu-item-header">
+          <span>Tomato Juice (Small)</span>
+          <span class="item-price">$2.99</span>
+        </div>
+        <p class="item-desc">Rich and savory tomato juice.</p>
+      </div>
+      <div class="menu-item">
+        <div class="menu-item-header">
+          <span>Tomato Juice (Large)</span>
+          <span class="item-price">$3.49</span>
+        </div>
+        <p class="item-desc">Rich and savory tomato juice.</p>
+      </div>
+      <div class="menu-item">
+        <div class="menu-item-header">
+          <span>Milk (Small)</span>
+          <span class="item-price">$2.79</span>
+        </div>
+        <p class="item-desc">Cold, refreshing milk.</p>
+      </div>
+      <div class="menu-item">
+        <div class="menu-item-header">
+          <span>Milk (Large)</span>
+          <span class="item-price">$3.29</span>
+        </div>
+        <p class="item-desc">Cold, refreshing milk.</p>
+      </div>
+      <div class="menu-item">
+        <div class="menu-item-header">
+          <span>Chocolate Milk (Small)</span>
+          <span class="item-price">$2.99</span>
+        </div>
+        <p class="item-desc">Creamy and chocolatey treat.</p>
+      </div>
+      <div class="menu-item">
+        <div class="menu-item-header">
+          <span>Chocolate Milk (Large)</span>
+          <span class="item-price">$3.29</span>
+        </div>
+        <p class="item-desc">Creamy and chocolatey treat.</p>
+      </div>
+      <div class="menu-item">
+        <div class="menu-item-header">
+          <span>Soft Drinks (Free Refills)</span>
+          <span class="item-price">$2.99</span>
+        </div>
+        <p class="item-desc">Coke, Diet Coke, Sprite, Ginger Ale, Coke Zero, Lemonade, Raspberry Tea.</p>
+      </div>
+      <div class="menu-item">
+        <div class="menu-item-header">
+          <span>Endless Iced Tea</span>
+          <span class="item-price">$2.79</span>
+        </div>
+        <p class="item-desc">Freshly brewed and endlessly refillable.</p>
+      </div>
+      <div class="menu-item">
+        <div class="menu-item-header">
+          <span>Hot Chocolate</span>
+          <span class="item-price">$2.49</span>
+        </div>
+        <p class="item-desc">Warm and comforting hot chocolate.</p>
+      </div>
+      <div class="menu-item">
+        <div class="menu-item-header">
+          <span>Extra Cup of Soup</span>
+          <span class="item-price">$3.99</span>
+        </div>
+      </div>
+    </div>
+  </section>
+    
+<!-- About us section -->
+<section id="about" class="section about-section">
+    <div class="about-inner">
+  <h2>About Us</h2>
+  <div class="about-content">
+    <div class="about-text">
+      <p>Welcome to Biggy's Place, a charming American restaurant located at 3701 Fowler St in Fort Myers, FL. This cozy spot offers a wide range of amenities, including takeout, delivery, vegetarian options, wheelchair accessibility, and even catering services. The restaurant also boasts a casual atmosphere, making it perfect for families, groups, and even kids. With features like private lot parking, free Wi-Fi, and gender-neutral restrooms, Biggy's Place ensures a comfortable dining experience for all guests.</p>
+
+      <p>Having visited Biggy's Place, I can attest to the positive feedback. The ambiance is welcoming, the service is attentive, and the food is simply delightful. From hearty breakfast dishes to satisfying lunch options, Biggy's Place certainly knows how to please its customers. Whether you're a local looking for a new favorite spot or a visitor seeking a taste of American comfort food, Biggy's Place is sure to leave you with a memorable dining experience.</p>
+    </div>
+
+    <div class="about-image">
+      <img src="/images/biggys.jpg" alt="Inside Biggy's Place" />
+    </div>
+      </div>
+  </div>
+</section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <h2>Contact Us</h2>
+    <p>Have questions? Reach out to us!</p>
+    <p>Email: info@biggyplace.com</p>
+    <p>Phone: (555) 123-4567</p>
+  </section>
+
+  <!-- Back to Top Button -->
+  <button id="backToTopBtn" title="Back to top">↑</button>
+
+  <footer>
+    <p>© 2024 Biggy's Place. All rights reserved.</p>
+      <a href="https://www.facebook.com/BiggysPlace/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="social-icon facebook">
+    <!-- Facebook SVG icon -->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
+      <path d="M22.675 0h-21.35C.597 0 0 .597 0 1.326v21.348C0 23.403.597 24 1.326 24h11.495v-9.294H9.691v-3.622h3.13V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.464.099 2.797.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.312h3.587l-.467 3.622h-3.12V24h6.116C23.403 24 24 23.403 24 22.674V1.326C24 .597 23.403 0 22.675 0z"/>
+    </svg>
+  </a>
+
+  <a href="https://www.instagram.com/explore/locations/133957191/biggys-place/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="social-icon instagram">
+    <!-- Instagram SVG icon -->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
+      <path d="M7.75 2h8.5A5.75 5.75 0 0122 7.75v8.5A5.75 5.75 0 0116.25 22h-8.5A5.75 5.75 0 012 16.25v-8.5A5.75 5.75 0 017.75 2zm0 1.5A4.25 4.25 0 003.5 7.75v8.5A4.25 4.25 0 007.75 20.5h8.5a4.25 4.25 0 004.25-4.25v-8.5A4.25 4.25 0 0016.25 3.5h-8.5zm8.25 2a1 1 0 110 2 1 1 0 010-2zM12 7a5 5 0 110 10 5 5 0 010-10zm0 1.5a3.5 3.5 0 100 7 3.5 3.5 0 000-7z"/>
+    </svg>
+  </a>
+</footer>
+
+  <script src="scripts.js"></script>
+    
+    <script>
+  // Set your opening and closing hours (24-hour format)
+  const openingHour = 7;  // 7 AM
+  const closingHour = 15; // 3 PM
+  const today = new Date();
+  const currentHour = today.getHours();
+  const currentDay = today.getDay(); // 0 = Sunday, 6 = Saturday
+
+  // Let's say they are closed on Mondays
+  const isClosedToday = currentDay === 1;
+
+  const statusElement = document.getElementById('open-status');
+
+  if (isClosedToday) {
+    statusElement.textContent = "Closed Today";
+    statusElement.style.color = "red";
+  } else if (currentHour >= openingHour && currentHour < closingHour) {
+    statusElement.textContent = "We’re Open Now!";
+    statusElement.style.color = "green";
+  } else {
+    statusElement.textContent = "We’re Closed";
+    statusElement.style.color = "red";
+  }
+</script>
+
+    
+</body>
+</html>
